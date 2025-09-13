@@ -12,57 +12,89 @@ document.addEventListener("DOMContentLoaded", () => {
 // Load Header and Footer
 function loadHeaderFooter(callback) {
   document.getElementById("header").innerHTML = `<div class="miniHeader d-none d-sm-block">
-  <div class="container">        
-<div class="row">
-<div class="col-auto topheadLinks">
-    <a target="_blank" href="tel:+916354710794"><i class="fa-solid fa-phone" aria-hidden="true"></i>+91 63547 10794</a>
-    <a target="_blank" href="mailto:Yor@Email.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Yor@Email.com</a>
-  </div>
-  <div class="col-auto topheadSocial">
-    <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-    <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i></a>
-    <a target="_blank" href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-    </div>
-</div>
+            <div class="container">
+              <div class="row">
+                <div class="col-auto topheadLinks">
+                  <a target="_blank" href="tel:+916354710794">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>+91 63547 10794 </a>
+                  <a target="_blank" href="mailto:Yor@Email.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> Yor@Email.com </a>
+                </div>
+                <div class="col-auto topheadSocial">
+                  <a target="_blank" href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/">
+                    <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a target="_blank" href="https://in.linkedin.com/">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-            </div>
-        <div id="main-header">
+          </div>
+          <div id="main-header">
             <nav class="mynavbar bg-light">
               <div class="container header">
                 <a class="brandLogo" href="index.html">
-                  <img src="image/TaxiLogo.webp" alt="Fast Taxi">
+                  <img src="image/BrandLogo.webp" alt="Adventure Camps">
                 </a>
                 <button class="navToggle">
                   <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <ul class="navMenu ms-auto mb-2 mb-lg-0">
                   <li class="nav-close">
-                    <button class="btn-nav-close"><span class="close-btn">+</span></button>
+                    <button class="btn-nav-close">
+                      <span class="close-btn">+</span>
+                    </button>
                   </li>
-                  <li class="navLi"><a class="navLink" href="index.html">Home</a></li>
-                  <li class="navLi"><a href="about.html" class="navLink">About</a></li>
-                  <li class="navLi"><a href="services.html" class="navLink">Services</a></li>
-                  <li class="navLi"><a href="Taxis.html" class="navLink">Taxis</a></li>
-                  <li class="navLi"><a href="contactUs.html" class="navLink">Contact</a></li>
+                  <li class="navLi">
+                    <a class="navLink" href="index.html">Home</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="about.html" class="navLink">About</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="activities.html" class="navLink">Activities</a>
+                  </li>
+                  
+                  <li class="navLi">
+                    <a href="#" class="navLink">Trips And Camps <span class="toggleSub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                          <path fill="currentColor" fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .75.75v4.75h4.75a.75.75 0 0 1 0 1.5H8.75v4.75a.75.75 0 0 1-1.5 0V8.75H2.5a.75.75 0 0 1 0-1.5h4.75V2.5A.75.75 0 0 1 8 1.75" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                    <ul class="dropdownList">
+                      <li class="navLi">
+                        <a href="#" class="navLink">Links</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="#" class="navLink">Links</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navLi">
+                    <a href="#" class="navLink">Gallery</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="contactUs.html" class="navLink">Contact</a>
+                  </li>
                 </ul>
-    
               </div>
             </nav>
-       
-        </div>
+          </div>
 `; // Keep your current header HTML here
-  document.getElementById("footer").innerHTML = ` <div class="container">
+  document.getElementById("footer").innerHTML = `<div class="container">
         <div class="footWrap defaultPadding">
           <div class="row">
             <!-- Company Info -->
             <div class="col-lg-auto col-sm-6 mb-4 mb-md-0 FooterAbout">
               <a class="footer-brand" href="index.html">
-                <img loading="lazy" src="image/FooterTaxiLogo.webp" alt="Fast Taxi">
+                <img loading="lazy" src="image/BrandLogo.webp" alt="Adventure Camps">
               </a>
-              <p>
-                We provide reliable and affordable taxi booking services tailored for everyday travel, airport pickups, and city rides. With a focus on safety, punctuality, and customer satisfaction, we’re here to make every journey smooth.
-              </p>
-             
+              <p> We provide reliable and affordable taxi booking services tailored for everyday travel, airport pickups, and city rides. With a focus on safety, punctuality, and customer satisfaction, we’re here to make every journey smooth. </p>
             </div>
             <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks">
               <h5 class="fourthH">Quick Links</h5>
@@ -73,35 +105,53 @@ function loadHeaderFooter(callback) {
                 </li>
                 <li>
                   <a class="footerLinks" href="about.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>About Us</a>
+                    <i class="fa-solid fa-circle-chevron-right"></i>About Us </a>
                 </li>
                 <li>
                   <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
+                    <i class="fa-solid fa-circle-chevron-right"></i>link </a>
                 </li>
                 <li>
                   <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
+                    <i class="fa-solid fa-circle-chevron-right"></i>link </a>
                 </li>
                 <li>
                   <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
+                    <i class="fa-solid fa-circle-chevron-right"></i>link </a>
                 </li>
                 <li>
                   <a class="footerLinks" href="contactUs.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Contact</a>
+                    <i class="fa-solid fa-circle-chevron-right"></i>Contact </a>
                 </li>
               </ul>
             </div>
             <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
               <h5 class="fourthH ">Explore Link</h5>
-              <ul>   
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
+              <ul>
+                <li>
+                  <a href="#" class="footerLinks">
+                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
+                </li>
+                <li>
+                  <a href="#" class="footerLinks">
+                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
+                </li>
+                <li>
+                  <a href="#" class="footerLinks">
+                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
+                </li>
+                <li>
+                  <a href="#" class="footerLinks">
+                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
+                </li>
+                <li>
+                  <a href="#" class="footerLinks">
+                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
+                </li>
+                <li>
+                  <a href="#" class="footerLinks">
+                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
+                </li>
               </ul>
             </div>
             <div class="col-md-6 col-lg-auto mb-4 mb-md-0">
@@ -110,7 +160,7 @@ function loadHeaderFooter(callback) {
                 <li>
                   <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                      <pre class="mb-0">
+                    <pre class="mb-0">
 TF-A1-22, Akshar Pavilion Mall,
 Near Priya Cinema,Vasna Bhyali
 Main Road, Vadodara,391410</pre>
@@ -118,11 +168,11 @@ Main Road, Vadodara,391410</pre>
                 </li>
                 <li>
                   <a href="tel:Number" class="footerLinks">
-                    <i class="fa-solid fa-phone"></i>+91 63547 10794</a>
+                    <i class="fa-solid fa-phone"></i>+91 63547 10794 </a>
                 </li>
                 <li>
                   <a class="emailAnchor footerLinks" href="mailto:youremail">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>youremail</a>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>youremail </a>
                 </li>
               </ul>
               <div class="social-icons mt-3">
@@ -134,18 +184,17 @@ Main Road, Vadodara,391410</pre>
                 </a>
               </div>
             </div>
-          
             <!-- Contact Info -->
           </div>
         </div>
-       
       </div>
       <div class="f-bottom effect">
         <div class="container">
           <div class="row ">
             <div class="col-12">
               <div class="inner">
-                <div class="copyright text-center"> <span class="year"></span>  All Rights Reserved by Fast Taxi | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
+                <div class="copyright text-center">
+                  <span class="year"></span> All Rights Reserved by Adventure Camps | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
                     <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
                   </a>
                 </div>
@@ -153,9 +202,9 @@ Main Road, Vadodara,391410</pre>
             </div>
           </div>
         </div>
-      </div> `; // Keep your current footer HTML here
+      </div>`; // Keep your current footer HTML here
 
-    document.getElementById("fabContainer").innerHTML = ` <!-- whatsapp FAB icon -->
+    document.getElementById("fabContainer").innerHTML = `<!-- whatsapp FAB icon -->
     <div class="fab-container">
       <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794">
         <svg xmlns="http://www.w3.org/2000/svg" width="59.54px" height="60px" viewBox="0 0 256 258">

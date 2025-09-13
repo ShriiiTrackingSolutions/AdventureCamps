@@ -369,7 +369,7 @@ header{
     .hero-button-prev {
       width: 45px;
       height: 45px;
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(0, 0, 0, 0.452);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -379,7 +379,7 @@ header{
 
     .hero-button-next:hover,
     .hero-button-prev:hover {
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(0, 0, 0, 0.712);
     }
 
     .hero-button-next::after,
@@ -737,14 +737,23 @@ header{
   height: 40px;
   width: 40px;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #fff;
   border-radius: 50%;
   margin-top: 0;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .adventure-button-next:after, .adventure-button-prev:after {
   font-size: 22px;
+}
+
+.adventure-button-next:hover, .adventure-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.OurAdventures{
+  background: url('../image/BackPattern.webp') center/cover no-repeat;
 }
 
 
@@ -802,4 +811,246 @@ header{
 }
 .adventureCard:hover .overlayActivities p{
   transform: translateY(0);
+}
+
+.activities-button-next,
+.activities-button-prev {
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border-radius: 50%;
+  margin-top: 0;
+  transition: backgraund-color 0.3s ease-in-out;
+}
+
+.activities-button-next:hover, .activities-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.activities-button-next:after, .activities-button-prev:after {
+  font-size: 22px;
+}
+
+.activities-button-prev{
+    left: auto;
+    right: 58px;
+}
+
+.campActivitiesSwiper {
+  padding-bottom: 40px;
+}
+.swiper-horizontal>.swiper-pagination-bullets.activities-Pagination, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px;
+    top: auto;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary-color);
+}
+
+#stats-section .container>.row{
+row-gap: 24px;
+}
+#stats-section{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/statistics.webp') center/cover no-repeat;
+  
+}
+
+.whyChoseCard{
+  background-color: #1375473d;
+}
+
+.whyChoseCard .fifthH{
+  color: var(--bgGrey);
+}
+
+.FaqSection{
+  background: var(--accentColour);
+}
+
+.FaqSection .secH{
+  color: var(--bgGrey);
+}
+
+#faqAccordion .accordion-item{
+  background-color: var(--lightBg);
+  color: var(--body);
+  border: 0 !important;
+}
+#faqAccordion .accordion-item .accordion-button{
+ background-color: var(--primary-color);
+ color: var(--body);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+#faqAccordion .accordion-item:not(#faqAccordion .accordion-item:last-of-type){
+margin-bottom: 8px;
+}
+
+#faqAccordion .accordion-item:first-of-type,#faqAccordion .accordion-item:last-of-type,#faqAccordion .accordion-item:first-of-type .accordion-button,#faqAccordion .accordion-item:last-of-type .accordion-button{
+  border-radius: 0;
+}
+
+#faqAccordion .accordion-button:not(.collapsed) {
+    color: var(--bgGrey);
+    background-color: var(--body);
+}
+
+#faqAccordion .accordion-button:not(.collapsed)::after {
+    background-image: url('../image/svgviewer-output.svg');
+}
+
+.ourMissionCard{
+  display: flex;
+  gap: 12px 12px;
+  align-items: start;
+  background-color: #1375473d;
+}
+
+.missIcon{
+  flex: 0 0 auto;
+}
+
+.missText{
+  flex: 1 0 0%;
+}
+
+.callToAction{
+  background: var(--accentColour);
+}
+
+
+
+ /* Section Styling */
+.all-activities-section {
+  background: var(--accentColour);
+}
+
+.all-activities-section .secH {
+  color: #ffffff;
+}
+
+.all-activities-section p {
+  font-size: 1.1rem;
+}
+
+
+
+/* Filter Button Styles */
+.all-activities-filters .btn {
+  margin: 0 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: var(--body);
+  border-color: var(--body);
+  background-color: var(--primary-color);
+}
+.all-activities-filters .btn:hover {
+    background-color: var(--body);
+    color: var(--lightBg);
+}
+
+.all-activities-filters .btn.active {
+  background-color: var(--body);
+  color: #fff;
+}
+
+.all-activities-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  aspect-ratio: 3 / 4; /* adjust depending on your design */
+}
+
+.all-activities-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.all-activities-card:hover {
+  transform: translateY(-5px);
+}
+
+.all-activities-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 8px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+}
+
+.all-activities-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  opacity: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.all-activities-card:hover .all-activities-overlay {
+  opacity: 1;
+}
+
+.all-activities-overlay p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.all-activities-overlay .activity-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.all-activities-overlay .activity-meta li {
+  margin-bottom: 5px;
+}
+
+.lazy-img { opacity: 0; transition: opacity 0.6s ease-in-out; }
+  .lazy-img.fade-in { opacity: 1; }
+
+.activity-icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.activity-icons span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+
+.newBanner{
+  padding: 140px 0;
+}
+
+.newBanner .display-3{
+  color: #ffffffff;
+}
+
+.activityPage0{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/statistics.webp') center/cover no-repeat;
 }
