@@ -63,7 +63,7 @@ function loadHeaderFooter(callback) {
                   </li>
                   
                   <li class="navLi">
-                    <a href="#" class="navLink">Gallery</a>
+                    <a href="gallery.html" class="navLink">Gallery</a>
                   </li>
                   <li class="navLi">
                     <a href="contactUs.html" class="navLink">Contact</a>
@@ -95,16 +95,16 @@ function loadHeaderFooter(callback) {
                     <i class="fa-solid fa-circle-chevron-right"></i>About Us </a>
                 </li>
                 <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link </a>
+                  <a class="footerLinks" href="activities.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Activities </a>
                 </li>
                 <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link </a>
+                  <a class="footerLinks" href="tripsAndCamps.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Trips And Camps</a>
                 </li>
                 <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link </a>
+                  <a class="footerLinks" href="gallery.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Gallery </a>
                 </li>
                 <li>
                   <a class="footerLinks" href="contactUs.html">

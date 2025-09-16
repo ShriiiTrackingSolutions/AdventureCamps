@@ -921,6 +921,9 @@ margin-bottom: 8px;
 .missText{
   flex: 1 0 0%;
 }
+.missText .fourthH{
+  color: var(--bgGrey);
+}
 
 .callToAction{
   background: var(--accentColour);
@@ -1052,7 +1055,13 @@ margin-bottom: 8px;
 }
 
 .activityPage0{
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/statistics.webp') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url('../image/statistics.webp') center/cover no-repeat;
+}
+.galleryPage0{
+  background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url('../image/galleryBanner.webp') center/cover no-repeat;
+}
+.contactPage0{
+  background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.57)), url('../image/contactBanner.webp') center/cover no-repeat;
 }
 
 .tripsPage0 p{
@@ -1150,6 +1159,7 @@ isolation: isolate;
 
 .capSiteCard .campSiteTitle{
   font-size: 18px;
+  color: var(--bgGrey);
 }
 
 
@@ -1191,4 +1201,161 @@ isolation: isolate;
 
 .swiper-pagination-bullet-active {
     background: var(--primary-color);
+}
+
+/* gallery categories start */
+
+.grid-item {
+   aspect-ratio: 3/2;
+   object-fit: cover;
+   margin-bottom: 24px;
+  }
+.grid-item img{
+   aspect-ratio: 3/2;
+   object-fit: cover;
+  }
+
+  .grid-sizer,.grid-item{
+    width: calc(33.333333% - 24px);                                                                              ;
+  }
+
+.gutter-sizer { 
+  width: 24px;
+}
+
+.grid-item--height2 {
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+.grid-item--height2 img{
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+.galleryCategories{
+  background: url('../image/BigBack.webp') center / cover no-repeat;
+}
+
+/* gallery categories end */
+
+
+.contactSection .container>.row{
+  row-gap: 30px;
+}
+
+textarea.form-control{
+  resize: none;
+}
+
+.form-control:not(textarea) {
+  height: 45px;
+}
+
+.form-control{
+    color: var(--body);
+    background-color: var(--primary-color);
+}
+
+.form-control:focus {
+    color: var(--body);
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.contactSection .gradientBox{
+  isolation: isolate;
+}
+
+.contactSection  .modal-header {
+  justify-content: center;
+  position: relative;
+}
+.contactSection  .modal-header .btn-close {
+  margin: 0 !important;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+
+.contactSection label{
+  color: var(--secondary-color);
+}
+
+.contactSection .thirdH{
+  color: var(--bgGrey);
+}
+
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.option {
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+}
+.portfolio-item,
+.spotlight {
+  border: 2px solid var(--lightPink);
+}
+.option img {
+  width: 50px;
+  height: 50px;
+}
+.modal-title{
+  color: var(--body);
+  text-align: center;
+}
+
+.absAchor{
+  position: absolute;
+  inset: 0;
+}
+
+.mapSection iframe{
+  margin-bottom: -8px;
+  height: 650px;
+}
+
+ .WhyChooseCards{
+  display: flex;
+  gap: 16px 16px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+ }
+  .WhyChooseCards .fifthH,.WhyChooseCards .iconWhyChoose{
+    color: var(--secondary-color);
+  }
+  .WhyChooseCards:hover{
+    color: #dadada;
+  }
+ .card_Row{
+  row-gap: 24px;
+ }
+.WhyChooseCards .iconWhyChoose{
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  flex: 0 0 auto;
+}
+.WhyChooseCards .iconWhyChoose svg{
+  vertical-align: top;
+}
+.WhyChooseCardInfo{
+  flex: 1 0 0%;
+}
+.WhyChooseCardInfo p,.WhyChooseCardInfo address{
+  margin-bottom: 0;
+}
+.WhyChoose .container>.row{
+  row-gap: 24px;
+  align-items: center;
+}
+
+
+.contactSection .btnFill{
+  border: none;
 }
